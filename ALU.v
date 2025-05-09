@@ -9,7 +9,7 @@ module ALU (
     output eq_out
 );
 
-    assign eq_out = (alu_src1 == alu_src2) ? 1'b1 : 1'b0;
+    assign eq_out = alu_src1 == alu_src2;
 
     always @(*) begin
         if (ADD)
